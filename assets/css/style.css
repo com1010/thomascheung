@@ -315,3 +315,6 @@ section.block.alt { background: var(--bg-2); border-top: 1px solid var(--line); 
   .event-item { grid-template-columns: 1fr; gap: 8px; }
   .hero { padding: 64px 0 60px; }
 }
+
+/* ---------- Book heading above poster ---------- */
+.book-head { padding-top: 44px; }
