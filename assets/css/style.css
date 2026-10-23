@@ -318,3 +318,36 @@ section.block.alt { background: var(--bg-2); border-top: 1px solid var(--line); 
 
 /* ---------- Book heading above poster ---------- */
 .book-head { padding-top: 44px; }
+
+/* ---------- Book cover feature + description ---------- */
+.book-desc-sec { padding-top: 56px; }
+.book-cover-feature { margin: 0 0 36px; text-align: center; }
+.book-cover-feature img {
+  display: block; width: 100%; max-width: 920px; margin: 0 auto;
+  border-radius: 16px; border: 1px solid rgba(125,211,252,0.25);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.55);
+  transition: transform 0.25s;
+}
+.book-cover-feature img:hover { transform: translateY(-6px) scale(1.005); }
+.book-desc { text-align: left; padding: 36px 40px; }
+.book-desc .bd-title { font-size: clamp(22px, 3vw, 30px); margin-bottom: 18px; }
+.book-desc .bd-title .bd-en { color: var(--cyan); font-size: 0.72em; }
+.bd-meta { list-style: none; margin: 0 0 26px; }
+.bd-meta li { padding: 7px 0; border-bottom: 1px dashed var(--line); font-size: 15px; color: var(--muted); }
+.bd-meta li strong { color: var(--text); }
+.bd-meta a { color: var(--cyan); }
+.book-desc h3 {
+  font-size: 18px; margin: 30px 0 12px; color: var(--gold, #f0b429);
+  border-left: 3px solid var(--cyan); padding-left: 12px;
+}
+.book-desc p { color: var(--muted); font-size: 15px; line-height: 1.8; margin-bottom: 12px; }
+.book-desc strong { color: var(--text); }
+.bd-links { margin: 0 0 8px 20px; color: var(--muted); font-size: 15px; }
+.bd-links li { padding: 4px 0; }
+.bd-links a { color: var(--cyan); }
+.rudao-note {
+  margin-top: 32px; padding: 24px 26px; border-radius: 12px;
+  background: rgba(240, 180, 41, 0.06); border: 1px solid rgba(240, 180, 41, 0.35);
+}
+.rudao-note h3 { margin-top: 0; border-left-color: var(--gold, #f0b429); color: var(--gold, #f0b429); }
+.rudao-note .rudao-hint { color: var(--cyan); font-size: 13.5px; margin-bottom: 14px; }
