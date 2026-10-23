@@ -351,3 +351,52 @@ section.block.alt { background: var(--bg-2); border-top: 1px solid var(--line); 
 }
 .rudao-note h3 { margin-top: 0; border-left-color: var(--gold, #f0b429); color: var(--gold, #f0b429); }
 .rudao-note .rudao-hint { color: var(--cyan); font-size: 13.5px; margin-bottom: 14px; }
+
+/* ---------- Full-width title hero (top of homepage) ---------- */
+.title-hero {
+  width: 100%;
+  background:
+    radial-gradient(ellipse 65% 120% at 50% -25%, rgba(56,189,248,0.20), transparent 70%),
+    radial-gradient(ellipse 45% 90% at 85% 110%, rgba(240,180,41,0.10), transparent 70%),
+    linear-gradient(180deg, #05070d 0%, #0a1424 100%);
+  border-bottom: 1px solid var(--line);
+  padding: 72px 20px 66px;
+  text-align: center;
+  overflow: hidden;
+}
+.title-hero-inner { max-width: 1320px; margin: 0 auto; }
+.title-hero .th-kicker {
+  font-size: clamp(22px, 4.4vw, 54px);
+  font-weight: 800;
+  letter-spacing: 0.10em;
+  line-height: 1.15;
+  text-transform: uppercase;
+  background: linear-gradient(92deg, #f6d365 0%, #f0b429 32%, #fff6d0 52%, #f0b429 72%, #e0a01f 100%);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+  filter: drop-shadow(0 0 26px rgba(240, 180, 41, 0.35));
+}
+.title-hero .th-main {
+  margin: 18px 0 0;
+  font-size: clamp(38px, 8.5vw, 104px);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: 0.06em;
+  color: #fff;
+}
+.title-hero .th-main span { position: relative; display: inline-block; z-index: 0; isolation: isolate; }
+.title-hero .th-main span::after {
+  content: ""; position: absolute; left: -10px; right: -10px; bottom: 8%;
+  height: 34%; border-radius: 6px; z-index: -1;
+  background: linear-gradient(90deg, rgba(56,189,248,0.50) 0%, rgba(56,189,248,0.28) 45%, rgba(240,180,41,0.55) 100%);
+  filter: blur(0.5px);
+}
+.title-hero .th-sub {
+  margin: 26px auto 0; max-width: 900px;
+  font-size: clamp(14px, 1.6vw, 19px);
+  color: var(--muted); line-height: 1.7;
+}
+@media (max-width: 640px) {
+  .title-hero { padding: 48px 16px 44px; }
+  .title-hero .th-kicker { letter-spacing: 0.06em; }
+}
