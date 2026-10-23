@@ -400,3 +400,16 @@ section.block.alt { background: var(--bg-2); border-top: 1px solid var(--line); 
   .title-hero { padding: 48px 16px 44px; }
   .title-hero .th-kicker { letter-spacing: 0.06em; }
 }
+
+/* ---------- Speech video ---------- */
+.video-feature { margin: 0 0 40px; text-align: center; }
+.video-feature video {
+  display: block; width: 100%; max-width: 920px; margin: 0 auto;
+  border-radius: 16px; background: #000;
+  border: 1px solid rgba(125,211,252,0.25);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.55);
+  aspect-ratio: 16 / 9; object-fit: contain;
+}
+.video-feature figcaption {
+  margin-top: 14px; color: var(--muted); font-size: 14px; letter-spacing: 0.3px;
+}
