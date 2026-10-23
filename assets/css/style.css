@@ -408,7 +408,7 @@ section.block.alt { background: var(--bg-2); border-top: 1px solid var(--line); 
   border-radius: 16px; background: #000;
   border: 1px solid rgba(125,211,252,0.25);
   box-shadow: 0 30px 80px rgba(0,0,0,0.55);
-  aspect-ratio: 16 / 9; object-fit: contain;
+  height: auto; max-height: 78vh;
 }
 .video-feature figcaption {
   margin-top: 14px; color: var(--muted); font-size: 14px; letter-spacing: 0.3px;
