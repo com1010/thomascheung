@@ -413,3 +413,18 @@ section.block.alt { background: var(--bg-2); border-top: 1px solid var(--line); 
 .video-feature figcaption {
   margin-top: 14px; color: var(--muted); font-size: 14px; letter-spacing: 0.3px;
 }
+
+/* ---------- Speech video: mobile sizing ---------- */
+@media (max-width: 820px) {
+  .video-feature { margin: 0 0 30px; padding: 0 6px; }
+  .video-feature video {
+    width: 100%; max-width: 100%; height: auto;
+    aspect-ratio: 16 / 9; object-fit: contain;
+    max-height: 40vh;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .video-feature { padding: 0 10px; }
+  .video-feature video { max-height: 34vh; border-radius: 8px; }
+}
